@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Roboto:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-inside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.content-inside .content {
+  width: 90%;
+  margin: auto;
+}
+
+.content-inside .content .todo-img {
+  display: none;
+}
+
+.content-inside .content .text {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-inside .content .text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: .4em;
+}
+
+.content-inside .content .text h1 span {
+  color: #ba1bcc;
+}
+
+.content-inside .content .text p {
+  color: white;
+  opacity: .7;
+  width: 60%;
+  margin: 0 auto 2em;
+}
+
+.content-inside .content .text .get {
+  margin: .5em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px solid #7f5a83;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding: .5em 1em;
+}
+
+.content-inside .content .text .get input {
+  background-color: transparent;
+  padding: .5em 1em;
+  outline: none;
+}
+
+.content-inside .content .text .get button {
+  padding: 1em 2em;
+}
+
+.nav {
+  width: 70%;
+  margin: 1em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #ba1bcc;
+  border-radius: 10px;
+  z-index: 200;
+}
+
+.nav .nav-btn {
+  background: transparent;
+  border: 2px solid #5476b4;
+  border-radius: 10px;
+  margin-right: 1em;
+  padding: .3em 1em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav .nav-btn:hover {
+  background-color: #0d324d;
+  padding: .5em 1.3em;
+}
+
+.landing-page {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #7f5a83;
+  background-image: linear-gradient(300deg, #7f5a83 40%, #0d324d 74%);
+  height: 100vh;
+  overflow: scroll;
+}
+
+.landing-page::-webkit-scrollbar {
+  display: none;
+}
+
+.landing-page .innerpage .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landing-page .innerpage .content .todo-img {
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.9);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+
+.landing-page .innerpage .content .text {
+  max-width: 50em;
+}
+
+.landing-page .innerpage .content .text .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.landing-page .innerpage .content .text .logo .logo-img {
+  width: 50%;
+}
+
+.landing-page .innerpage .content .text h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 1em;
+}
+
+.landing-page .innerpage .content .text h1 i {
+  font-size: 2rem;
+}
+
+.landing-page .innerpage .content .text p {
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  color: white;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.landing-page .getstarted {
+  background: #5476b4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.landing-page .getstarted:hover {
+  background-color: #7f5a83;
+  padding: .5em 1.3em;
+  color: black;
+}
+
+.landing-page .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  gap: .2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-page .logo .logo-img {
+  width: 20%;
+}
+
+.landing-page .logo .logoname {
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .landing-page .content-inside .content .todo-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5em;
+    opacity: .5;
+  }
+  .landing-page .content-inside .content .text {
+    width: 100%;
+  }
+  .landing-page .content-inside .content .text h1 {
+    font-size: 2rem;
+  }
+  .landing-page .content-inside .content .text p {
+    width: 100%;
+  }
+  .landing-page .content-inside .content .text .get {
+    width: 100%;
+    margin: .5em auto;
+    border: none;
+    padding: .1em .5em;
+  }
+  .landing-page .content-inside .content .text .get input {
+    background-color: transparent;
+    padding: .5em 1em;
+    outline: none;
+    border-bottom: 2px solid #ba1bcc;
+    width: 50%;
+  }
+  .landing-page .content-inside .content .text .get button {
+    padding: .5em 1em;
+  }
+  .nav {
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+  }
+  .nav .nav-btn {
+    border: 2px solid #5476b4;
+    padding: .1em .5em;
+    cursor: pointer;
+  }
+  .nav .nav-btn:hover {
+    background-color: #0d324d;
+    padding: .5em 1.3em;
+  }
+}
+/*# sourceMappingURL=landingpage.css.map */
